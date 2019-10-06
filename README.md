@@ -27,22 +27,22 @@ Structured as:
 
 {
     PID1: {
-            size:       Number, // total program size
-            resident:   Number, // resident set size
-            share:      Number, // number of resident shared pages
-            text:       Number, // text (code)
-            lib:        Number, // library (unused since Linux 2.6; always 0)
-            data:       Number, // data + stack
-            dt:         Number  // dirty pages (unused since Linux 2.6; always 0)
+            size:       [size in MB], // total program size
+            resident:   [size in MB], // resident set size
+            share:      [size in MB], // number of resident shared pages
+            text:       [size in MB], // text (code)
+            lib:        [size in MB], // library (unused since Linux 2.6; always 0)
+            data:       [size in MB], // data + stack
+            dt:         [size in MB]  // dirty pages (unused since Linux 2.6; always 0)
     },
     PID2: {
-            size:       Number, // total program size
-            resident:   Number, // resident set size
-            share:      Number, // number of resident shared pages
-            text:       Number, // text (code)
-            lib:        Number, // library (unused since Linux 2.6; always 0)
-            data:       Number, // data + stack
-            dt:         Number  // dirty pages (unused since Linux 2.6; always 0)
+            size:       [size in MB], // total program size
+            resident:   [size in MB], // resident set size
+            share:      [size in MB], // number of resident shared pages
+            text:       [size in MB], // text (code)
+            lib:        [size in MB], // library (unused since Linux 2.6; always 0)
+            data:       [size in MB], // data + stack
+            dt:         [size in MB]  // dirty pages (unused since Linux 2.6; always 0)
     },
     ...
 }
@@ -64,13 +64,13 @@ const currentMemoryData = memMonitor.memoryData;
 Structured as:
 
 {
-    size:       Number, // total program size
-    resident:   Number, // resident set size
-    share:      Number, // number of resident shared pages
-    text:       Number, // text (code)
-    lib:        Number, // library (unused since Linux 2.6; always 0)
-    data:       Number, // data + stack
-    dt:         Number  // dirty pages (unused since Linux 2.6; always 0)
+    size:       [size in MB], // total program size
+    resident:   [size in MB], // resident set size
+    share:      [size in MB], // number of resident shared pages
+    text:       [size in MB], // text (code)
+    lib:        [size in MB], // library (unused since Linux 2.6; always 0)
+    data:       [size in MB], // data + stack
+    dt:         [size in MB]  // dirty pages (unused since Linux 2.6; always 0)
 }
 */
 const reducedMemoryData = memMonitor.getMergedMemoryData();
