@@ -74,4 +74,7 @@ Structured as:
 }
 */
 const reducedMemoryData = memMonitor.getMergedMemoryData();
+
+// You can unsubscribe all listeners and stop the polling process with
+memMonitor.kill();
 ```
