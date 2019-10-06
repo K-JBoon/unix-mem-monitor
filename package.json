@@ -1,0 +1,22 @@
+{
+  "name": "unix-mem-monitor",
+  "version": "1.0.1",
+  "description": "Provides tools to monitor memory usage on UNIX systems without ps for Lambda",
+  "main": "lib/mem-monitor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lambda",
+    "unix",
+    "memory",
+    "proc",
+    "mem",
+    "monitor",
+    "process",
+    "pid",
+    "pids"
+  ],
+  "author": "Klaas-Jan Boon",
+  "license": "ISC"
+}
